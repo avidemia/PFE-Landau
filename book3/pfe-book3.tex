@@ -1,0 +1,202 @@
+%!TEX TS-program = pdflatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[10.5pt,twoside]{scrbook}
+
+
+\setparsizes{10pt}{0pt}{0pt plus 1fil}
+
+\usepackage{geometry}
+\geometry{paperwidth = 5in,paperheight=7in, textwidth=4in,textheight=5.5in}
+
+%\usepackage[urw-garamond]{mathdesign}
+%\usepackage{kpfonts}
+%\usepackage{libertine}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{libertine}
+\usepackage[libertine]{newtxmath}
+%\usepackage[nomath]{libertinus}
+
+%
+\usepackage{cabin}
+
+\renewcommand*\ttdefault{lcmtt}
+
+\usepackage[protrusion=allmath,tracking=small caps]{microtype}
+
+
+\usepackage{physics}
+
+
+\setcounter{secnumdepth}{0}
+
+
+\usepackage[usenames,svgnames]{xcolor}
+
+%\usepackage{amsmath}
+
+\usepackage{graphicx}
+%\usepackage{quattrocento}
+\usepackage[per-mode=symbol]{siunitx}
+
+\usepackage{nicefrac}
+
+\usepackage{soul}
+
+\newcommand{\hlred}[1]{\textcolor{Red}{#1}}% prints in red
+\newcommand{\hlblue}[1]{\textcolor{SteelBlue}{\textbf{#1}}}% prints in blue
+\newcommand{\hlgray}[1]{\textcolor{black!70}{{#1}}}% prints in gray 
+
+\usepackage{mathrsfs}
+
+\usepackage{scrlayer-scrpage}
+
+\newcommand{\grotsq}{%
+   \fontfamily{ugq}\selectfont}
+\pagestyle{scrheadings}   
+\setkomafont{pageheadfoot}{\grotsq\small}
+\setkomafont{pagenumber}{\grotsq\small}
+
+\usepackage{tocloft}
+
+\setlength\cftparskip{-2pt}
+\setlength\cftbeforesecskip{3pt}
+\setlength\cftaftertoctitleskip{3pt}
+ 
+
+% length before after figure
+\setlength{\textfloatsep}{6pt plus 0.75pt minus 1.5pt}
+\setlength{\intextsep}{10pt plus 1.0pt minus 2.0pt}
+
+\usepackage{titlesec}
+
+\titleformat{\chapter}
+  {\fontfamily{ugq}\selectfont\huge\color{black!80}}
+  {\thechapter}{1em}{}
+\titleformat{\section}
+  {\fontfamily{ugq}\selectfont\Large\color{black!70}}
+  {\thesection}{1em}{}
+%\setlength{\parskip}{0.25\baselineskip}
+%\setlength{\parfillskip}{0pt plus 1fil}
+%\setparsizes{10pt}{0pt}{0pt plus 1fil}
+%\setparsizes{1em}{0.1\baselineskip plus .1\baselineskip}{1em plus 1fil}
+%\usepackage{pstricks}
+
+\renewcommand{\baselinestretch}{.9}
+
+% for no dots in toc
+\renewcommand{\cftdot}{} % no dot leaders
+\renewcommand{\cftchapfont}{\fontfamily{ugq}\selectfont\large}
+\renewcommand{\cftsecfont}{\fontfamily{ugq}\selectfont}
+\renewcommand{\cfttoctitlefont}{\fontfamily{ugq}\selectfont\huge}
+\renewcommand{\cftchappagefont}{\fontfamily{ugq}\selectfont\large}
+\renewcommand{\cftsecpagefont}{\fontfamily{ugq}\selectfont}
+
+
+\usepackage{caption}
+\usepackage[font={color=black!70,footnotesize},figurename={Figure}]{caption}
+
+\usepackage{enumitem}
+% \setlength{\parskip}{1ex plus 0.5ex minus 0.2ex}
+\usepackage[ colorlinks=true]{hyperref}
+\hypersetup{
+  colorlinks,
+  linkcolor=black!70,
+  linktoc=all
+}
+
+\titlespacing*{\section}
+{0pt}{2.5ex plus 1ex minus .2ex}{2.3ex plus .2ex}
+
+\usepackage{emptypage}
+
+
+\usepackage{hyphenat}
+
+%\usepackage{etoolbox}
+
+
+\newcommand*\figr[1]{\hyperref[#1]{Figure~\ref{#1}}}
+
+\usepackage{dialogue}
+
+\usepackage{lips}
+
+\DeclareSIUnit\kgf{kgf}
+\DeclareSIUnit\amus{amu}
+\DeclareSIUnit\calorie{cal}
+\DeclareSIUnit\mercury{Hg}
+\DeclareSIUnit\atmos{atm}
+\DeclareSIUnit\gf{gf}
+\DeclareSIUnit\dyne{dyn}
+\DeclareSIUnit\erg{erg}
+\DeclareSIUnit\gauss{G}
+\DeclareSIUnit\fahrenheit{^{\circ}F}
+
+\usepackage{pgfornament}
+
+\newcommand{\TODO}{\textcolor{Red}{\textbf TODO!}\xspace}
+\newcommand{\ie}{\textit{i.\hairsp{}e.}\xspace}
+\newcommand{\eg}{\textit{e.\hairsp{}g.}\xspace}
+
+%\DeclareMathAlphabet{\pazocal}{OMS}{zplm}{m}{n}
+%\newcommand{\Ea}{\mathcal{E}}
+
+\usepackage{url}
+\renewcommand{\UrlFont}{\color{RoyalBlue}\small\texttt}
+
+\usepackage{booktabs}
+
+%\usepackage[version=4, arrows=pgf{To[length=3pt]}{.15ex}]{mhchem}
+\usepackage[version=4]{mhchem}
+%https://tex.stackexchange.com/questions/557753/using-mhchem-with-gfsneohellenic-gives-a-weird-looking-arrow
+
+\usepackage{chemfig}
+%\setatomsep{2.5em}
+
+
+%
+\title{Physics for Everyone: Book 3 Electrons}
+\author{A. I. Kitaigordsky}
+\date{2020}
+
+\begin{document}
+
+\hyphenation{Vla-dim-iro-vich}
+\hyphenation{Dob-rov-ol-sky}
+\frontmatter
+
+\input{00-title}
+
+\input{00-preface}
+%{\pagestyle{plain}
+%\markboth{Contents}{Contents} 
+\cleardoublepage
+\tableofcontents %}
+%\pagestyle{fancy}
+%\cleardoublepage
+
+\mainmatter
+
+\input{ch-01}
+%
+\input{ch-02}
+%
+%
+\input{ch-03}
+%
+\input{ch-04}
+%
+%
+\input{ch-05}
+%
+\input{ch-06}
+%
+%\input{07-pressure}
+
+\end{document}
+
+% Local Variables:
+% TeX-engine: pdflatex
+% End:

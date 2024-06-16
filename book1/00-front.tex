@@ -1,0 +1,31 @@
+
+% !TEX root = pfe-book1.tex
+\thispagestyle{empty}
+
+
+\begin{tikzpicture}[remember picture,overlay]
+  \fill[gray!10]
+        (current page.north west) rectangle (current page.south east);
+\end{tikzpicture}
+
+\begin{tikzpicture}[remember picture,overlay] 
+\fill [fill=Maroon,yshift=-3cm] (current page.north west) rectangle (\textwidth,4);
+\end{tikzpicture}
+
+
+\begin{tikzpicture}[remember picture,overlay] 
+%\fill [fill=IndianRed,yshift=-3cm] (current page.north west) rectangle (\textwidth,1);
+
+
+\node [scale=2,font=\sffamily,darkgray,yshift=3.cm]	 at (current page.center) {L. D. Landau \quad A. I. Kitaigorodsky};
+\end{tikzpicture}
+
+%
+\begin{tikzpicture}[remember picture,overlay] 
+%\node [yshift=-3.1cm]	 at (current page.center) {\includegraphics[width=0.9\textwidth]{figs/front-back/tarasov-qasp-fc3.pdf}};
+\node [scale=1.5,yshift=-5cm,font=\sffamily,darkgray]	 at (current page.center) {MIR PUBLISHERS MOSCOW};
+\end{tikzpicture}
+
+
+
+\cleardoublepage
